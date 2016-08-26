@@ -1,0 +1,4 @@
+db.getCollection('users').find({
+    badges: 'black',
+    'favorites.artist': 'Picasso'
+})

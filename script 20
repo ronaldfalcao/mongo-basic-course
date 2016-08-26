@@ -1,0 +1,11 @@
+db.getCollection('authors').insert({
+    name: 'Author 1',
+    age: 40,
+    books: 1
+})
+
+db.getCollection('authors').insert({
+    name: 'Author 2',
+    age: 50,
+    books: 1
+})

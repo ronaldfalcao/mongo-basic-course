@@ -1,0 +1,9 @@
+db.getCollection('users').update({
+        _id: 2.0,
+        name: 'bob'
+    
+},
+{
+    name: 'ted',
+    age: 32.0
+})

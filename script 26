@@ -1,0 +1,23 @@
+db.getCollection('books2').update({
+    author: 'Author 1'
+},{
+    $set: {
+            like: 100
+        }
+}, {multi: true})
+
+db.getCollection('books2').update({
+    author: 'Author 3'
+},{
+    $set: {
+            like: 80
+        }
+}, {multi: true})
+
+db.getCollection('books2').update({
+    author: 'Author 2'
+},{
+    $set: {
+            like: 90
+        }
+}, {multi: true})

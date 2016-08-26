@@ -1,0 +1,9 @@
+db.getCollection('users').find({
+    $or:[ 
+        {status: 'A'},
+        {age:{
+                $lt: 30
+            }
+        }
+    ]    
+})

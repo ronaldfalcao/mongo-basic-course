@@ -1,0 +1,10 @@
+db.getCollection('users').update({
+        _id: 4.0,
+        name: 'xi'
+    },
+    {
+        $set: {
+            name: 'xi Jr',
+            age: 35.0
+        }
+})

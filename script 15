@@ -1,0 +1,8 @@
+db.getCollection('users').update({
+        _id: 6.0
+    },
+    {
+        $unset: {
+            age: 0
+        }
+})

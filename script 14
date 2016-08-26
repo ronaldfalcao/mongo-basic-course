@@ -1,0 +1,12 @@
+db.getCollection('users').update({
+        age: {
+            $gt: 39.0
+        }
+    },
+    {
+        $set: {
+            age: 37.0
+        }
+}, {
+        multi: true
+})

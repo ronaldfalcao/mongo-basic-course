@@ -1,0 +1,10 @@
+db.getCollection('books').insert({
+    title: 'Book 5',
+    date: new Date(),
+    author:{
+            $ref: 'authors',
+            $id: [
+                    ObjectId("57be1a363dd644bd2849e0f3"), 
+                    ObjectId("57be1a3f3dd644bd2849e0f4")]
+        }
+})

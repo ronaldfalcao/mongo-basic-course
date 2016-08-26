@@ -1,0 +1,25 @@
+db.getCollection('books').insert({
+    title: 'Book 2',
+    date: new Date(),
+    author: [
+    {
+            name: 'Author 1',
+            age: 40,
+            books: 2
+    },
+    {
+            name: 'Author 2',
+            age: 40,
+            books: 1
+    },
+    {
+            name: 'Author 3',
+            age: 40,
+            books: 1
+    }
+    
+    
+    
+    ]
+})
+

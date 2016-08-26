@@ -1,0 +1,6 @@
+db.getCollection('books2').insert({
+    title: 'Book 4',
+    description: 'A description abou book 4',
+    date: new Date(),
+    author: 'Author 4'
+})

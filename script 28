@@ -1,0 +1,8 @@
+db.getCollection('books2').aggregate([{
+  $group:{
+        _id: '$author',
+        total_max:{
+                $max: '$like'
+            }
+      }  
+}])

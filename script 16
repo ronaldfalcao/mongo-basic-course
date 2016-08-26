@@ -1,0 +1,3 @@
+db.getCollection('users').remove({
+        _id: 2.0
+})
